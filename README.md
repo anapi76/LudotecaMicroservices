@@ -60,6 +60,20 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (YAML)**: [http://localhost:8091/v3/api-docs.yaml](http://localhost:8091/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8091/swagger-ui/index.html](http://localhost:8091/swagger-ui/index.html)
 
+### 2. Author Microservice
+
+- Description: Handles business logic related to author.
+- Routes:
+    - GET /author: Get all categories.
+    - POST /author: Get a paginated listing of authors.
+    - PUT /author: Create a new author.
+    - PUT /author/{id}: Update an author.
+    - DELETE /author/{id}: Delete an author.
+
+- **OpenAPI Documentation (JSON)**: [http://localhost:8092/v3/api-docs](http://localhost:8092/v3/api-docs)
+- **OpenAPI Documentation (YAML)**: [http://localhost:8092/v3/api-docs.yaml](http://localhost:8092/v3/api-docs.yaml)
+- **Swagger UI**: [http://localhost:8092/swagger-ui/index.html](http://localhost:8092/swagger-ui/index.html)
+
 
 
 
