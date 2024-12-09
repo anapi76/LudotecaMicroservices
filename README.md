@@ -40,6 +40,8 @@ This project uses **OpenAPI** to describe the API endpoints.
 ## Running the Microservices
 
 - Category-service: http://localhost:8091
+- Author-service: http://localhost:8092
+- Game-service: http://localhost:8093
 
 ## Configuring Database
 
@@ -73,6 +75,18 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (JSON)**: [http://localhost:8092/v3/api-docs](http://localhost:8092/v3/api-docs)
 - **OpenAPI Documentation (YAML)**: [http://localhost:8092/v3/api-docs.yaml](http://localhost:8092/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8092/swagger-ui/index.html](http://localhost:8092/swagger-ui/index.html)
+
+### 3. Game Microservice
+
+- Description: Handles business logic related to author.
+- Routes:
+    - GET /game: Get a filtered list of Games.
+    - PUT /game: Create a new game.
+    - PUT /game/{id}: Update a game.
+
+- **OpenAPI Documentation (JSON)**: [http://localhost:8093/v3/api-docs](http://localhost:8093/v3/api-docs)
+- **OpenAPI Documentation (YAML)**: [http://localhost:8093/v3/api-docs.yaml](http://localhost:8093/v3/api-docs.yaml)
+- **Swagger UI**: [http://localhost:8093/swagger-ui/index.html](http://localhost:8093/swagger-ui/index.html)
 
 
 

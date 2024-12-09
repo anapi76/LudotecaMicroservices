@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/tutorial-category/pom.xml" />
         <option value="$PROJECT_DIR$/tutorial-author/pom.xml" />
+        <option value="$PROJECT_DIR$/tutorial-game/pom.xml" />
       </list>
     </option>
   </component>
