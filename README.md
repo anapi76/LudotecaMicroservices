@@ -78,7 +78,7 @@ This project uses **OpenAPI** to describe the API endpoints.
 
 ### 3. Game Microservice
 
-- Description: Handles business logic related to author.
+- Description: Handles business logic related to game.
 - Routes:
     - GET /game: Get a filtered list of Games.
     - PUT /game: Create a new game.
