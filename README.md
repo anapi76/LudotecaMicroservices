@@ -39,6 +39,7 @@ This project uses **OpenAPI** to describe the API endpoints.
 
 ## Running the Microservices
 
+- Eureka-service: http://localhost:8761
 - Category-service: http://localhost:8091
 - Author-service: http://localhost:8092
 - Game-service: http://localhost:8093
@@ -49,7 +50,11 @@ This project uses **OpenAPI** to describe the API endpoints.
 
 ## Microservices
 
-### 1. Category Microservice
+### 1. Eureka Microservice
+
+### 2. Gateway Microservice
+
+### 3. Category Microservice
 
 - Description: Handles business logic related to category.
 - Routes:
@@ -62,7 +67,7 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (YAML)**: [http://localhost:8091/v3/api-docs.yaml](http://localhost:8091/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8091/swagger-ui/index.html](http://localhost:8091/swagger-ui/index.html)
 
-### 2. Author Microservice
+### 4. Author Microservice
 
 - Description: Handles business logic related to author.
 - Routes:
@@ -76,7 +81,7 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (YAML)**: [http://localhost:8092/v3/api-docs.yaml](http://localhost:8092/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8092/swagger-ui/index.html](http://localhost:8092/swagger-ui/index.html)
 
-### 3. Game Microservice
+### 5. Game Microservice
 
 - Description: Handles business logic related to game.
 - Routes:
