@@ -39,6 +39,7 @@ This project uses **OpenAPI** to describe the API endpoints.
 
 ## Running the Microservices
 
+- Gateway-service: http://localhost:8080
 - Eureka-service: http://localhost:8761
 - Category-service: http://localhost:8091
 - Author-service: http://localhost:8092
