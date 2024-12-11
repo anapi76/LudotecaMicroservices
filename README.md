@@ -32,30 +32,26 @@ section of the pom.xml file.
 - Modelmapper
 - Hibernate-validator
 - OpenApi
+- OpenFeign
 
 ## Documentation
 
 This project uses **OpenAPI** to describe the API endpoints.
 
-## Running the Microservices
-
-- Gateway-service: http://localhost:8080
-- Eureka-service: http://localhost:8761
-- Category-service: http://localhost:8091
-- Author-service: http://localhost:8092
-- Game-service: http://localhost:8093
-
-## Configuring Database
-
-- http://localhost:8080/h2-console
-
 ## Microservices
 
 ### 1. Eureka Microservice
 
+- Running: http://localhost:8761
+
 ### 2. Gateway Microservice
 
+- Running: http://localhost:8080
+
 ### 3. Category Microservice
+
+- Running: http://localhost:8091
+- Console-H2: http://localhost:8091/h2-console
 
 - Description: Handles business logic related to category.
 - Routes:
@@ -70,6 +66,9 @@ This project uses **OpenAPI** to describe the API endpoints.
 
 ### 4. Author Microservice
 
+- Running: http://localhost:8092
+- Console-H2: http://localhost:8092/h2-console
+
 - Description: Handles business logic related to author.
 - Routes:
     - GET /author: Get all categories.
@@ -83,6 +82,9 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **Swagger UI**: [http://localhost:8092/swagger-ui/index.html](http://localhost:8092/swagger-ui/index.html)
 
 ### 5. Game Microservice
+
+- Running: http://localhost:8093
+- Console-H2: http://localhost:8093/h2-console
 
 - Description: Handles business logic related to game.
 - Routes:

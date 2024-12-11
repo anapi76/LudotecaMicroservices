@@ -1,11 +1,14 @@
 package com.ccsw.tutorial_game.game;
 
+import com.ccsw.tutorial_game.author.AuthorClient;
+import com.ccsw.tutorial_game.author.model.AuthorDto;
+import com.ccsw.tutorial_game.category.CategoryClient;
+import com.ccsw.tutorial_game.category.model.CategoryDto;
 import com.ccsw.tutorial_game.game.model.Game;
 import com.ccsw.tutorial_game.game.model.GameDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +29,10 @@ public class GameController {
     GameService gameService;
 
     @Autowired
-    ModelMapper mapper;
+    CategoryClient categoryClient;
+
+    @Autowired
+    AuthorClient authorClient;
 
     /**
      * Método para recuperar una lista de {@link Game}
@@ -39,8 +45,20 @@ public class GameController {
     @GetMapping
     public List<GameDto> find(@RequestParam(value = "title", required = false) String title, @RequestParam(value = "idCategory", required = false) Long idCategory) {
 
-        List<Game> games = gameService.find(title, idCategory);
-        return games.stream().map(e -> mapper.map(e, GameDto.class)).collect(Collectors.toList());
+        List<CategoryDto> categories = categoryClient.findAll();
+        List<AuthorDto> authors = authorClient.findAll();
+
+        return gameService.find(title, idCategory).stream().map(game -> {
+            GameDto gameDto = new GameDto();
+
+            gameDto.setId(game.getId());
+            gameDto.setTitle(game.getTitle());
+            gameDto.setAge(game.getAge());
+            gameDto.setCategory(categories.stream().filter(category -> category.getId().equals(game.getIdCategory())).findFirst().orElse(null));
+            gameDto.setAuthor(authors.stream().filter(author -> author.getId().equals(game.getIdAuthor())).findFirst().orElse(null));
+
+            return gameDto;
+        }).collect(Collectors.toList());
     }
 
     /**

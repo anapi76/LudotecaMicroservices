@@ -56,9 +56,9 @@ public class GameServiceImpl implements GameService {
 
         game = (id == null) ? new Game() : this.gameRepository.findById(id).orElseThrow(() -> new GameNotFoundException("Game not exists"));
 
-        BeanUtils.copyProperties(dto, game, "id");
-        //game.setIdAuthor(dto.getIdAuthor());
-        //game.setIdCategory(dto.getIdCategory());
+        BeanUtils.copyProperties(dto, game, "id", "author", "category");
+        game.setIdAuthor(dto.getAuthor().getId());
+        game.setIdCategory(dto.getCategory().getId());
 
         this.gameRepository.save(game);
     }
