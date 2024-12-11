@@ -30,3 +30,7 @@ spring:
           uri: lb://SPRING-CLOUD-EUREKA-CLIENT-GAME
           predicates:
             - Path=/game/**
+        - id: customer
+          uri: lb://SPRING-CLOUD-EUREKA-CLIENT-CUSTOMER
+          predicates:
+            - Path=/customer/**

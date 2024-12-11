@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/tutorial-game/pom.xml" />
         <option value="$PROJECT_DIR$/tutorial-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/tutorial-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/tutorial-customer/pom.xml" />
       </list>
     </option>
   </component>

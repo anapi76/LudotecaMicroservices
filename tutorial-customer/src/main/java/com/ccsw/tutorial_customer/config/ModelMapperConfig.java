@@ -1,4 +1,4 @@
-package com.ccsw.tutorial_game.config;
+package com.ccsw.tutorial_customer.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
