@@ -96,6 +96,22 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (YAML)**: [http://localhost:8093/v3/api-docs.yaml](http://localhost:8093/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8093/swagger-ui/index.html](http://localhost:8093/swagger-ui/index.html)
 
+### 6. Customer Microservice
+
+- Running: http://localhost:8094
+- Console-H2: http://localhost:8094/h2-console
+
+- Description: Handles business logic related to customer.
+- Routes:
+    - GET /customer: Get a list of Customers.
+    - PUT /customer: Create a new customer.
+    - PUT /customer/{id}: Update a customer.
+    - DELETE /customer/{id}: Delete a customer.
+
+- **OpenAPI Documentation (JSON)**: [http://localhost:8094/v3/api-docs](http://localhost:8094/v3/api-docs)
+- **OpenAPI Documentation (YAML)**: [http://localhost:8094/v3/api-docs.yaml](http://localhost:8094/v3/api-docs.yaml)
+- **Swagger UI**: [http://localhost:8094/swagger-ui/index.html](http://localhost:8094/swagger-ui/index.html)
+
 
 
 
