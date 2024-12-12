@@ -1,4 +1,4 @@
-package com.ccsw.tutorial_author.common.pagination;
+package com.ccsw.tutorial_author.pagination;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.domain.PageRequest;

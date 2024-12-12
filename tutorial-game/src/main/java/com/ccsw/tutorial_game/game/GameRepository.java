@@ -10,7 +10,4 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface GameRepository extends CrudRepository<Game, Long>, JpaSpecificationExecutor<Game> {
 
-    /*@Override
-    @EntityGraph(attributePaths = { "category", "author" })
-    List<Game> findAll(Specification<Game> spec);*/
 }

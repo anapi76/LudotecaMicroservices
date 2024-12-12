@@ -34,3 +34,7 @@ spring:
           uri: lb://SPRING-CLOUD-EUREKA-CLIENT-CUSTOMER
           predicates:
             - Path=/customer/**
+        - id: loan
+          uri: lb://SPRING-CLOUD-EUREKA-CLIENT-LOAN
+          predicates:
+            - Path=/loan/**

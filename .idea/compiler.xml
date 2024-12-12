@@ -9,8 +9,9 @@
         <module name="tutorial-category" />
         <module name="tutorial-author" />
         <module name="tutorial-eureka" />
-        <module name="tutorial-game" />
         <module name="tutorial-customer" />
+        <module name="tutorial-loan" />
+        <module name="tutorial-game" />
         <module name="tutorial-gateway" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="tutorial-eureka" options="-parameters" />
       <module name="tutorial-game" options="-parameters" />
       <module name="tutorial-gateway" options="-parameters" />
+      <module name="tutorial-loan" options="-parameters" />
     </option>
   </component>
 </project>

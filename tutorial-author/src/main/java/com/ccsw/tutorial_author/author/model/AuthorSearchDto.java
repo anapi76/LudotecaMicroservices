@@ -1,6 +1,6 @@
 package com.ccsw.tutorial_author.author.model;
 
-import com.ccsw.tutorial_author.common.pagination.PageableRequest;
+import com.ccsw.tutorial_author.pagination.PageableRequest;
 
 /**
  * @author ccsw

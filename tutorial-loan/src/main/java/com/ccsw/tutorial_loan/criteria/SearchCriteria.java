@@ -1,4 +1,4 @@
-package com.ccsw.tutorial_game.common.criteria;
+package com.ccsw.tutorial_loan.criteria;
 
 public class SearchCriteria {
 

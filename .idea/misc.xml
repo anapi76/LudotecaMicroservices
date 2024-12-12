@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/tutorial-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/tutorial-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/tutorial-customer/pom.xml" />
+        <option value="$PROJECT_DIR$/tutorial-loan/pom.xml" />
       </list>
     </option>
   </component>

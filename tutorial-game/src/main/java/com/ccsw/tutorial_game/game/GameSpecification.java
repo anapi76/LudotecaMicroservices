@@ -1,6 +1,6 @@
 package com.ccsw.tutorial_game.game;
 
-import com.ccsw.tutorial_game.common.criteria.SearchCriteria;
+import com.ccsw.tutorial_game.criteria.SearchCriteria;
 import com.ccsw.tutorial_game.game.model.Game;
 import jakarta.persistence.criteria.*;
 import org.springframework.data.jpa.domain.Specification;

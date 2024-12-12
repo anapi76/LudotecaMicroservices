@@ -112,6 +112,20 @@ This project uses **OpenAPI** to describe the API endpoints.
 - **OpenAPI Documentation (YAML)**: [http://localhost:8094/v3/api-docs.yaml](http://localhost:8094/v3/api-docs.yaml)
 - **Swagger UI**: [http://localhost:8094/swagger-ui/index.html](http://localhost:8094/swagger-ui/index.html)
 
+### 7. Loan Microservice
+
+- Running: http://localhost:8095
+- Console-H2: http://localhost:8095/h2-console
+
+- Description: Handles business logic related to loan.
+- Routes:
+    - POST /loan: Get a paginated and filtered list of loans.
+    - PUT /loan: Create a new loan.
+    - DELETE /loan/{id}: Delete a loan.
+
+- **OpenAPI Documentation (JSON)**: [http://localhost:8095/v3/api-docs](http://localhost:8095/v3/api-docs)
+- **OpenAPI Documentation (YAML)**: [http://localhost:8095/v3/api-docs.yaml](http://localhost:8095/v3/api-docs.yaml)
+- **Swagger UI**: [http://localhost:8095/swagger-ui/index.html](http://localhost:8095/swagger-ui/index.html)
 
 
 
